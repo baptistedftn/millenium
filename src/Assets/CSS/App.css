@@ -1,0 +1,19 @@
+.NavBar-logo{
+  height: 50px;
+}
+
+.App-header {
+  background-color: #BDB2FF;
+  color: white;
+}
+
+.App-footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding:10px;
+  text-align: center;
+}
+
+.Footer-logo{
+  height: 10px;
+}
