@@ -20,7 +20,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <Container >
+    <Container style={{maxWidth: '800px'}}>
       <Card>
         <CardHeader>Les News du Millénium</CardHeader>
         <CardBody><div className="twitter-embed"></div></CardBody>     

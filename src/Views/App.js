@@ -10,6 +10,7 @@ import Accueil from '../Views/Accueil';
 import Blog from '../Views/Blog';
 import Inscription from './Inscription';
 import Sections from './Sections'
+import Agenda from './Agenda';
 
 import {
   Container,
@@ -42,11 +43,9 @@ function App() {
               <Route exact path="/blog">
                 <Blog/>
               </Route>
-              <Route exact path="/sections">
-                <Sections/>
-              </Route>
-              <Route exact path="/calendrier">
-                <Inscription/>
+              <Route path="/sections/:selectedSection" component={Sections}/>
+              <Route exact path="/agenda">
+                <Agenda/>
               </Route>
               <Route exact path="/inscription">
                 <Inscription/>
