@@ -31,7 +31,8 @@ const NavBar = (props) => {
     <div className='App-header'>
       <Navbar color="faded" dark expand="md">
         <Link to='/'><NavbarBrand><img src={logo} alt='' className='NavBar-logo'/>AEP - Millénium</NavbarBrand></Link>
-        <NavbarToggler onClick={toggleNavbar} className="text-white" >{collapsed ? <i class="fas fa-bars"/> : <i class="fas fa-times"/> }</NavbarToggler>
+        <NavbarToggler onClick={toggleNavbar} className="text-white" >{collapsed ? <small><i class="fas fa-bars"/></small> : <small><i class="fas fa-times"/></small> }</NavbarToggler>
+        
         <Collapse isOpen={!collapsed} navbar className="mr-right" >
           <Nav navbar>
             <NavItem>
@@ -45,12 +46,19 @@ const NavBar = (props) => {
                 <i class="fas fa-plus"/> Sections
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
-                  <Link to='/sections/pilate'>Pilate</Link>
-                </DropdownItem>
-                <DropdownItem>
-                  <Link to='/sections/danse'>Danse</Link>
-                </DropdownItem>
+                
+                <Link to='/sections/pilate'>
+                  <DropdownItem>
+                    Pilate
+                  </DropdownItem>
+                </Link>
+                
+                <Link to='/sections/danse'>
+                  <DropdownItem>
+                    Danse
+                  </DropdownItem>
+                </Link>
+
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>

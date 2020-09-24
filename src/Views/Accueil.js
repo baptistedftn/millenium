@@ -1,18 +1,9 @@
 import React from 'react';
 
-import {
-  Card,
-  CardText,
-  CardBody,
-  CardTitle,
-  Button,
-  UncontrolledCollapse,
-  CardImg,
-  Container,
-} from 'reactstrap';
+import { Card, CardText, CardBody, CardTitle, Button, UncontrolledCollapse, CardImg, Container, } from 'reactstrap';
 
 import ca from '../Assets/Medias/comite_administration.jpg';
-import map from '../Assets/Medias/map.png'
+import map from '../Assets/Medias/map.png';
 
 const Accueil = (props) => {
   return (

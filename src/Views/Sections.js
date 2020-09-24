@@ -14,7 +14,7 @@ const Sections = (props) => {
     let { selectedSection } = useParams();
     return (
         <Container style={{maxWidth: '800px'}}>
-            <h1>{selectedSection}</h1>
+            <h1>Section {selectedSection}</h1>
             <Card>
                 <CardHeader>Danse</CardHeader>
                 <CardBody>
