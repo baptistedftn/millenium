@@ -1,6 +1,9 @@
 import React from 'react';
 
 import { Card, CardText, CardBody, CardTitle, Button, UncontrolledCollapse, CardImg, Container, } from 'reactstrap';
+import { builder, BuilderComponent } from '@builder.io/react'
+
+builder.init('d06cb2e74bd54ec5bc7733ba22c9a922')
 
 import ca from '../Assets/Medias/comite_administration.jpg';
 import map from '../Assets/Medias/map.png';
@@ -14,8 +17,10 @@ const Accueil = (props) => {
           <CardBody>
             <CardTitle>Bienvenue sur le site du Millénium de Marles-les-Mines</CardTitle>
             <CardText>
-              L'association du Millénium de Marles-les-Mines existe depuis le moment où elle a été crée et est presidée par un être humain vivant sur Terre &nbsp;<i class="fas fa-smile-wink"/><br/>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus odio, molestie eu enim sit amet, mollis pellentesque nibh. Phasellus at euismod lorem, nec euismod purus. Donec pulvinar feugiat nisi. 
+              <BuilderComponent
+                model="page"
+                entry="d8ce747be3dd4ee5b48527accf3fcfb9" 
+              />
             </CardText>
             <Button color='primary' id='toggler_map'>Où nous trouver <i class="fas fa-map-marked-alt"/></Button>
             <UncontrolledCollapse toggler="#toggler_map">
