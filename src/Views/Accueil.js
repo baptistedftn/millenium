@@ -3,12 +3,11 @@ import React from 'react';
 import { Card, CardText, CardBody, CardTitle, Button, UncontrolledCollapse, CardImg, Container, } from 'reactstrap';
 import { builder, BuilderComponent } from '@builder.io/react'
 
-builder.init('d06cb2e74bd54ec5bc7733ba22c9a922')
-
 import ca from '../Assets/Medias/comite_administration.jpg';
 import map from '../Assets/Medias/map.png';
 
 const Accueil = (props) => {
+  builder.init('d06cb2e74bd54ec5bc7733ba22c9a922')
   return (
     <div>
       <Container style={{maxWidth: '800px'}} >
