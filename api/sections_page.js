@@ -32,7 +32,7 @@ async function connectToDatabase(uri) {
 module.exports = async (req, res) => {
   // Get a database connection, cached or otherwise,
   // using the connection string environment variable as the argument
-  const db = await connectToDatabase(process.env.MONGO_URL + 'millenium_website')
+  const db = await connectToDatabase(process.env.MONGO_URL)
 
   // Select the "sections_page" collection from the database
   const collection = await db.collection('sections_pages')
