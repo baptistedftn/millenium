@@ -41,5 +41,5 @@ module.exports = async (req, res) => {
   const sections_pages = await collection.find({}).toArray()
 
   // Respond with a JSON string of all sections_page in the collection
-  res.status(200).json({ sections_page })
+  res.status(200).json({ sections_pages })
 }
