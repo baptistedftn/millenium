@@ -4,6 +4,7 @@ const MongoClient = require('mongodb').MongoClient
 
 // Create cached connection variable
 let cachedDb = null
+console.log(process.env.MONGO_URL)
 
 // A function for connecting to MongoDB,
 // taking a single parameter of the connection string
@@ -31,7 +32,8 @@ async function connectToDatabase(uri) {
 module.exports = async (req, res) => {
   // Get a database connection, cached or otherwise,
   // using the connection string environment variable as the argument
-  const db = await connectToDatabase(process.env.MONGO_URL + '/millenium_website/')
+  const db = await connectToDatabase(process.env.MONGO_URL + 'millenium_website/')
+
   // Select the "sections_page" collection from the database
   const collection = await db.collection('sections_pages')
 
