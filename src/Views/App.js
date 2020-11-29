@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavBar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import CustomAlert from '../Components/CustomAlert';
 
 import Accueil from '../Views/Accueil';
 import Blog from '../Views/Blog';
@@ -23,7 +22,6 @@ function App() {
       
       <div className="App">
         <Fade>
-          <CustomAlert title='Bienvenue' text='Bienvenue sur le site du Millénium' isOpen={true}/>
           <NavBar/><br/>
           <Container className="themed-container" fluid={true}>
             <Switch>
