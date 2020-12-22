@@ -7,7 +7,7 @@ import NavBar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
 import Accueil from '../Views/Accueil';
-import Blog from '../Views/Blog';
+import Discussions from '../Views/Discussions';
 import Inscription from './Inscription';
 import Sections from './Sections'
 import Agenda from './Agenda';
@@ -28,10 +28,13 @@ function App() {
               <Route exact path="/">
                 <Accueil/>
               </Route>
-              <Route exact path="/blog">
-                <Blog/>
+              <Route exact path="/discussions">
+                <Discussions/>
               </Route>
-              <Route path="/sections/:selectedSection" component={Sections}/>
+              {/*<Route path="/sections/:selectedSection" component={Sections}/>*/}
+              <Route exact path="/sections">
+                <Sections/>
+              </Route>
               <Route exact path="/agenda">
                 <Agenda/>
               </Route>

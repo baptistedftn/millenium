@@ -10,10 +10,6 @@ import {
   Nav, 
   NavItem, 
   NavLink,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownMenu,
-  DropdownToggle
 } from 'reactstrap';
 
 import { 
@@ -36,36 +32,19 @@ const NavBar = (props) => {
         <Collapse isOpen={!collapsed} navbar className="mr-right" >
           <Nav navbar>
             <NavItem>
-              <NavLink><Link className="text-white" to="/blog"><i class="fas fa-bullhorn"/> Blog</Link></NavLink>
+              <NavLink><Link className="text-white" to="/discussions"><i class="fas fa-comment-alt"/> Discussions</Link></NavLink>
             </NavItem>
             <NavItem>
               <NavLink><Link className="text-white" to="/inscription"><i class="fas fa-edit"/> Inscription en ligne</Link></NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret className="text-white">
-                <i class="fas fa-plus"/> Sections
-              </DropdownToggle>
-              <DropdownMenu right>
-                
-                <Link to='/sections/pilate'>
-                  <DropdownItem>
-                    Pilate
-                  </DropdownItem>
-                </Link>
-                
-                <Link to='/sections/danse'>
-                  <DropdownItem>
-                    Danse
-                  </DropdownItem>
-                </Link>
-
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink><Link className="text-white" to="/sections"><i class="fas fa-users"/> Sections</Link></NavLink>   
+            </NavItem>
             <NavItem>
               <NavLink><Link className="text-white" to="/agenda"><i class="far fa-calendar-alt"/> Agenda des Activités</Link></NavLink>   
             </NavItem>
             <NavItem>
-              <NavLink className="text-white" href="https://github.com/baptistedftn"><i class="fab fa-github"/> GitHub</NavLink>
+              <NavLink><Link className="text-white" to="/archives"><i class="fas fa-film"/> Archives</Link></NavLink>   
             </NavItem>
           </Nav>
         </Collapse>
